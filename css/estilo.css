@@ -19,9 +19,51 @@ body{
     text-align: center;
     line-height: 50px;
     position: fixed;
-    z-index: 4;
+    z-index: 3;
     top: 5px;
     left: 5px;
+    cursor: pointer;
+}
+
+.lateralMenu{
+    /* display: none; */
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    bottom: 0;
+    z-index: 99;
+    background: #1f2833e0;
+    transition: 1s ease;
+}
+
+.lateralMenu ul{
+    list-style: none;
+    max-height: 100vh;
+}
+
+.lateralMenu ul li{
+    margin-bottom: 5vw;
+}
+
+.lateralMenu ul li a{
+    color: white;
+    font-size: 5vw;
+    text-decoration: none;
+}
+
+.lateralMenu .close-menu-button{
+    margin-left: 70vw;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+    color: #66fcf1;
+    font-size: 10vw;
+    cursor: pointer;
+}
+
+.lateralMenu .close-menu-button:hover{
+    color: #45a29e;
 }
 
 header{
@@ -41,7 +83,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
-    background: #0b0c10;
+    background: transparent;
 }
 
 .menu .marca{
@@ -128,6 +170,18 @@ header{
     margin-left: auto;
 }
 
+footer{
+    padding: 20px 20px;
+}
+
+.footer-cont h6{
+    color: #66fcf1;
+}
+
+.footer-cont p{
+    font-size: 12px;
+}
+
 @media screen and (max-width:992px){
     .carousel-container, .text-cont{
         margin-left: auto;
@@ -138,16 +192,32 @@ header{
         font-size: 50px;
     }
 
-    .menu{
+    /* .menu{
         display: none;
-    }
+    } */
 
     .header-cont{
         margin-top: 0;
     }
 
-    .menu-button{
-        display: block;
+     .menu-list.social{
+        display: none;
+    }
+
+    .footer-cont{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    
+}
+
+@media screen and (min-width: 620px)
+{
+    .lateralMenu{
+        display: none !important; 
     }
 }
 
@@ -156,7 +226,22 @@ header{
     .header-cont .title{
         font-size: 30px;
     }
+    
+    .menu-button{
+        display: block;
+    }
 
+    .menu{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:576px){
+    
+    .carousel-container, .text-cont{
+        width: 70%;
+    }
     
 }
 
