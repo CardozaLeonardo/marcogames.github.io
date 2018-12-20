@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: white;
+    background: #0b0c10;
+    font-family: 'Archivo', sans-serif;
+}
+
+header{
+    width: 100%;
+    background: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+}
+
+.menu{
+    display: flex;
+    background: transparent;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.menu .marca{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu .menu-list{
+    list-style: none;
+    display: flex;
+}
+
+.menu .menu-list li{
+   margin-left: 10px;   
+}
+
+.menu .menu-list li a, .social a{
+    text-decoration: none;
+    color: #66fcf1;
+}
+
+.menu .menu-list li a:hover, .social a:hover{
+    color: #45a29e;
+}
+
+.social a{
+    font-size: 25px;
+}
+
+.header-cont{
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    width: inherit;
+}
+
+.header-text{
+    width: 50%;
+    text-align: center;
+}
+
+.header-cont .title{
+    color: #66fcf1;
+    font-size: 120px;
+}
+
+.header-button{
+    background: transparent;
+    width: 90px;
+    height: 40px;
+    border: 2px solid #66fcf1;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: 1.3s ease;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.header-button:hover{
+    background: #45a29e;
+}
+
+.content{
+    background: #1f2833;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-container, .text-cont{
+    width: 50%;
+}
+
